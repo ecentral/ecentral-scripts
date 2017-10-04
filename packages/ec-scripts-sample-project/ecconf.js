@@ -5,5 +5,5 @@ module.exports = {
         port: 9999,
     },
 
-    webpack: {},
+    runners: () => ({}),
 };
