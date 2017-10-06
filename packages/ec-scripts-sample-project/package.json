@@ -6,15 +6,12 @@
     "init": "./node_modules/.bin/ec-cli --init",
     "start": "./node_modules/.bin/ec-cli --start",
     "build": "./node_modules/.bin/ec-cli --build",
-    "watch": "./node_modules/.bin/ec-cli --watch",
+    "build-watch": "./node_modules/.bin/ec-cli --build --watch",
+    "test": "./node_modules/.bin/ec-cli --test",
     "config": "./node_modules/.bin/ec-cli --show-config"
   },
   "license": "MIT",
-  "dependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "ec-scripts": "git+https://git@gitlab.ecentral.de/f.laukel/ec-scripts.git#develop",
     "ec-scripts-react": "git+https://git@gitlab.ecentral.de/f.laukel/ec-scripts-react.git#develop"
