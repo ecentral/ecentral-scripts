@@ -1,13 +1,22 @@
 {
-  "name": "my-sample-project",
+  "name": "ec-scripts-sample-project",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A sample project using ec-scripts.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "init": "./node_modules/.bin/ec-cli --init",
+    "start": "./node_modules/.bin/ec-cli --start",
+    "build": "./node_modules/.bin/ec-cli --build",
+    "watch": "./node_modules/.bin/ec-cli --watch",
+    "config": "./node_modules/.bin/ec-cli --show-config"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
-    "ec-scripts": "latest"
-  },
-  "license": "MIT"
+    "ec-scripts": "git+https://git@gitlab.ecentral.de/f.laukel/ec-scripts.git#develop",
+    "ec-scripts-react": "git+https://git@gitlab.ecentral.de/f.laukel/ec-scripts-react.git#develop"
+  }
 }

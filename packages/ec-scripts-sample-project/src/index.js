@@ -1,3 +1,8 @@
+/**
+ * This file contains a simple ES6 'Hello Word' example.
+ */
+
 import sayHello from './sayHello';
 
-console.log(sayHello('World'));
+// eslint-disable-next-line  no-console
+console.info(sayHello('World'));

@@ -1,9 +1,13 @@
 module.exports = {
+    presets: ['react'],
     options: {
         devMode: true,
-        host: '127.0.0.1',
         port: 9999,
+        entryFiles: [
+            'styles/main.scss',
+            'index-react.js',
+        ],
+        title: 'eC React App',
+        htmlTemplate: './src/templates/index.ejs',
     },
-
-    runners: () => ({}),
 };
