@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "A sample project using ec-scripts.",
   "scripts": {
-    "init": "cross-env NODE_ENV=development  ec-cli --init",
-    "start": "cross-env NODE_ENV=development  ec-cli --start",
-    "build": "cross-env NODE_ENV=production  ec-cli --build",
-    "build-watch": "cross-env NODE_ENV=production  ec-cli --build --watch",
-    "test": "cross-env NODE_ENV=test  ec-cli --test",
-    "config": "cross-env NODE_ENV=development  ec-cli --show-config"
+    "init": "cross-env NODE_ENV=development ec-scripts --init",
+    "start": "cross-env NODE_ENV=development ec-scripts --start",
+    "build": "cross-env NODE_ENV=production ec-scripts --build",
+    "build-watch": "cross-env NODE_ENV=production ec-scripts --build --watch",
+    "test": "cross-env NODE_ENV=test ec-scripts --test",
+    "config": "cross-env NODE_ENV=development ec-scripts --show-config"
   },
   "license": "MIT",
   "dependencies": {},
