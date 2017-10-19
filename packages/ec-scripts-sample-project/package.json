@@ -1,6 +1,6 @@
 {
   "name": "ec-scripts-sample-project",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "A sample project using ec-scripts.",
   "scripts": {
     "init": "cross-env NODE_ENV=development ec-scripts --init",
@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "ec-scripts": "git+ssh://git@gitlab.ecentral.de:2222/f.laukel/ec-scripts.git#develop",
-    "ec-scripts-react": "git+ssh://git@gitlab.ecentral.de:2222/f.laukel/ec-scripts-react.git#develop"
+    "ec-scripts": "git+https://git@gitlab.ecentral.de/f.laukel/ec-scripts.git#develop",
+    "ec-scripts-react": "git+https://git@gitlab.ecentral.de/f.laukel/ec-scripts-react.git#develop"
   }
 }
