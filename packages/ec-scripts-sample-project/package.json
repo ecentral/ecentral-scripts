@@ -14,6 +14,6 @@
   "dependencies": {},
   "devDependencies": {
     "ec-scripts": "git+https://git@gitlab.ecentral.de/f.laukel/ec-scripts.git#feature/latest-feedback",
-    "ec-scripts-react": "git+https://git@gitlab.ecentral.de/f.laukel/ec-scripts-react.git#develop"
+    "ec-scripts-preset-react": "git+https://git@gitlab.ecentral.de/f.laukel/ec-scripts-preset-react.git#develop"
   }
 }
