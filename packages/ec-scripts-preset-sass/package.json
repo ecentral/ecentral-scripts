@@ -1,0 +1,32 @@
+{
+  "name": "ec-scripts-preset-sass",
+  "version": "1.0.0",
+  "description": "Sass/SCSS preset for ec-scripts.",
+  "author": "eCentral GmbH <info@ecentral.de>",
+  "contributors": [
+    "Felix Laukel <f.laukel@ecentral.de>"
+  ],
+  "keywords": [
+    "ec-scripts",
+    "preset",
+    "styling",
+    "sass",
+    "scss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecentral/ec-scripts-preset-sass.git"
+  },
+  "main": "ecconf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0"
+  },
+  "peerDependencies": {
+    "ec-scripts": "*"
+  }
+}
