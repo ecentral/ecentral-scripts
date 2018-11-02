@@ -6,7 +6,7 @@ module.exports = {
             'index-react.js',
         ],
         title: 'eC Sample Project',
-        htmlTemplate: './src/templates/index.ejs',
+        htmlTemplate: './templates/index.ejs',
         port: 9999,
     },
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import AppLayout from './AppLayout';
-import logo from '../assets/react-logo.svg';
+import { ReactComponent as ReactLogo } from '../assets/react-logo.svg';
 
 /* eslint-disable  react/prefer-stateless-function */
 export default class App extends React.Component {
@@ -11,7 +11,7 @@ export default class App extends React.Component {
                     This stuff is running with React.
                 </p>
                 <p>
-                    <img src={logo} height={100} alt="React Logo" />
+                    <ReactLogo height={100} />
                 </p>
             </AppLayout>
         );

@@ -11,7 +11,11 @@
     "config": "cross-env NODE_ENV=development ec-scripts show-config"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-test-renderer": "^16.6.0"
+  },
   "devDependencies": {
     "ec-scripts": "git+https://git@gitlab.ecentral.de/f.laukel/ec-scripts.git#develop",
     "ec-scripts-preset-react": "git+https://git@gitlab.ecentral.de/f.laukel/ec-scripts-preset-react.git#develop"
