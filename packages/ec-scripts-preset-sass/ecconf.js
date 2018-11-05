@@ -1,26 +1,46 @@
 const path = require('path');
 
 module.exports = {
+    options: {
+        stylesDir: 'styles', // relative to srcDir
+    },
     runners: (config) => ({
         ...config.runners,
 
         webpack: {
-            '$module.rules[**][test=/\\.css$/]': (rule) => ({
-                ...rule,
-                test: /\.(css|scss)$/,
-                use: [
-                    ...rule.use,
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: true,
-                            includePaths: [
-                                path.resolve(config.options.srcDir, config.options.stylesDir),
-                            ],
+            '$module.rules': (rules = []) => {
+                const cssRule = rules.find(rule => '.css'.match(rule.test) && !'.scss'.match(rule.test));
+
+                if (!cssRule) {
+                    console.warn('ec-scripts-preset-sass could not find a base webpack rule that handles .css files.');
+                    return rules;
+                }
+
+                const sassRule = {
+                    ...cssRule,
+                    test: /\.scss$/,
+                    use: [
+                        ...cssRule.use,
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                sourceMap: true,
+                                includePaths: [
+                                    path.resolve(config.options.srcDir, config.options.stylesDir),
+                                ],
+                            },
                         },
-                    },
-                ],
-            }),
+                    ],
+                };
+
+                return [ ...rules, sassRule];
+            },
+        },
+
+        jest: {
+            moduleNameMapper: {
+                '\\.scss$': require.resolve('identity-obj-proxy'),
+            },
         },
     }),
 };

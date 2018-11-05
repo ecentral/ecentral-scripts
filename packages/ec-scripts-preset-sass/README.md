@@ -6,6 +6,19 @@ Extends eC Scripts configuration with SCSS support.
 
 This preset enables:
 - Support for Sass in `.scss` files
+- A new option to define a styles folder
+
+```js
+// .ecconf.js
+module.exports = {
+    options: {
+        // Define the directory for your basic .scss files.
+        // This tells the Sass compiler where to look for imports in the first place.
+        // (like _variables.scss or _mixins.scss)
+        stylesDir: 'styles', // Relative to srcDir
+    },
+};
+```
 
 ## Installation
 
