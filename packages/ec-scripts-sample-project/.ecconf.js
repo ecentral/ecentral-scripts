@@ -1,5 +1,5 @@
 module.exports = {
-    presets: ['react'],
+    presets: ['react', 'sass'],
     options: {
         entryFiles: [
             'styles/main.scss',
