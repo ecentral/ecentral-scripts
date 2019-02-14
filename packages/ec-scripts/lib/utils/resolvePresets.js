@@ -16,7 +16,11 @@ const resolvePresets = (appPath = settings.appPath) => {
         .concat((config.presets || []).map(preset => `ec-scripts-preset-${preset}`));
 
     return presets.map((preset) => {
-        const presetConfigPath = path.resolve(appPath, 'node_modules', preset);
+        // require.resolve refers to the `main` entry in package.json be default.
+        // Therefore we require the package.json itself.
+        let presetConfigPath = require.resolve(`${preset}/package.json`, { paths: [appPath] });
+        // Then fall back to the package root directory.
+        presetConfigPath = path.dirname(presetConfigPath);
         return requireConfig(presetConfigPath);
     }).concat([config]);
 };

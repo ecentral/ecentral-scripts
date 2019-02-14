@@ -2,19 +2,20 @@
   "name": "ec-scripts-sample-project",
   "version": "1.0.0",
   "description": "A sample project using ec-scripts.",
+  "private": true,
   "scripts": {
-    "init": "cross-env NODE_ENV=development ec-scripts init",
-    "start": "cross-env NODE_ENV=development ec-scripts start",
-    "build": "cross-env NODE_ENV=production ec-scripts build",
-    "build-watch": "cross-env NODE_ENV=production ec-scripts build --watch",
-    "test": "cross-env NODE_ENV=test ec-scripts test",
-    "config": "cross-env NODE_ENV=development ec-scripts show-config"
+    "init": "ec-scripts init --env=development",
+    "start": "ec-scripts start --env=development",
+    "build": "ec-scripts build --env=production",
+    "build-watch": "ec-scripts build --watch --env=production",
+    "test": "ec-scripts test --env=test",
+    "config": "ec-scripts show-config --env=development"
   },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "ec-scripts": "git+https://git@gitlab.ecentral.de/f.laukel/ec-scripts.git#develop",
-    "ec-scripts-preset-react": "git+https://git@gitlab.ecentral.de/f.laukel/ec-scripts-preset-react.git#develop",
+    "ec-scripts": "^2.0.0",
+    "ec-scripts-preset-react": "^2.1.1",
     "ec-scripts-preset-sass": "^1.0.0"
   }
 }

@@ -31,12 +31,12 @@ Done!
 ```json
 {
   "scripts": {
-    "init": "cross-env NODE_ENV=development ec-scripts init",
-    "start": "cross-env NODE_ENV=development ec-scripts start",
-    "build": "cross-env NODE_ENV=production ec-scripts build",
-    "build-watch": "cross-env NODE_ENV=production ec-scripts build --watch",
-    "test": "cross-env NODE_ENV=test ec-scripts test",
-    "config": "cross-env NODE_ENV=development ec-scripts show-config"
+    "init": "ec-scripts init --env=development",
+    "start": "ec-scripts start --env=development",
+    "build": "ec-scripts build --env=production",
+    "build-watch": "ec-scripts build --watch --env=production",
+    "test": "ec-scripts test --env=test",
+    "config": "ec-scripts show-config --env=development"
   }
 }
 ```
