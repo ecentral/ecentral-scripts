@@ -20,7 +20,7 @@ and then run `ec-cli init` in your project folder.
 
 Done!
 
-[Learn more about eC Scripts CLI.](https://github.com/ecentral/ec-scripts-cli)
+[Learn more about eC Scripts CLI.](https://github.com/ecentral/ecentral-scripts/packages/ec-scripts-cli)
 
 ### Adding eC Scripts manually
 
@@ -65,7 +65,7 @@ The quickest way to achieve this is by importing it in your `src/index.js` like 
 import './path/to/main.css';
 ```
 
-Support for Sass/SCSS is available as a preset: [ec-scripts-preset-sass](https://github.com/ecentral/ec-scripts-preset-sass)
+Support for Sass/SCSS is available as a preset: [ec-scripts-preset-sass](https://github.com/ecentral/ecentral-scripts/packages/ec-scripts-preset-sass)
 
 ## Run commands
 
@@ -298,7 +298,7 @@ Of course this sounds very theoretical and we will not go in detail here by
 explaining all the possibilities you have inside an `.ecconf.js` file.
 
 For advanced usage it's a good start to look at the
-[React preset source](https://github.com/ecentral/ec-scripts-preset-react/blob/master/ecconf.js) itself.
+[React preset source](https://github.com/ecentral/ecentral-scripts/packages/ec-scripts-preset-react/blob/master/ecconf.js) itself.
 
 ## Acknowledgements
 

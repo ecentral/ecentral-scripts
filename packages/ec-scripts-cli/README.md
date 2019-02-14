@@ -6,7 +6,7 @@ Start building modern front end projects in seconds.
 
 eC Scripts CLI is a command-line tool that you can use to set up eC Scripts projects with only one command.
 
-[Learn more about eC Scripts.](https://github.com/ecentral/ec-scripts)
+[Learn more about eC Scripts.](https://github.com/ecentral/ecentral-scripts/package/ec-scripts)
 
 ## Installation
 

@@ -15,7 +15,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ecentral/ec-scripts-preset-sass.git"
+    "url": "https://github.com/ecentral/ecentral-scripts.git",
+    "directory": "packages/ec-scripts-preset-sass"
   },
   "main": "ecconf.js",
   "scripts": {

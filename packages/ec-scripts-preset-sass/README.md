@@ -28,4 +28,4 @@ Using eC CLI:
 ec-cli init sass
 ```
 
-If you want to add this preset to an existing project, please read the eC Scripts [installation guide](https://github.com/ecentral/ec-scripts).
+If you want to add this preset to an existing project, please read the eC Scripts [installation guide](https://github.com/ecentral/ecentral-scripts/packages/ec-scripts).

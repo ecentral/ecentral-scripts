@@ -14,7 +14,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ecentral/ec-scripts-cli.git"
+    "url": "https://github.com/ecentral/ecentral-scripts.git",
+    "directory": "packages/ec-cli"
   },
   "main": "bin/ec-cli.js",
   "bin": {
