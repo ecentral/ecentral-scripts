@@ -1,6 +1,6 @@
 {
   "name": "ec-scripts-sample-project",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A sample project using ec-scripts.",
   "private": true,
   "scripts": {
@@ -12,10 +12,9 @@
     "config": "ec-scripts show-config --env=development"
   },
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "ec-scripts": "^2.0.0",
-    "ec-scripts-preset-react": "^2.1.1",
-    "ec-scripts-preset-sass": "^1.0.0"
+    "ec-scripts": "^3.0.0",
+    "ec-scripts-preset-react": "^3.0.0",
+    "ec-scripts-preset-sass": "^2.0.0"
   }
 }
