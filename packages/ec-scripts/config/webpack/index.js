@@ -37,6 +37,7 @@ module.exports = (config) => ({
         ],
         extensions: [
             '.js',
+            '.mjs',
             '.json',
         ],
     },
