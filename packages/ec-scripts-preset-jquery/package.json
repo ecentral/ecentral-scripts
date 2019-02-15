@@ -1,6 +1,6 @@
 {
   "name": "ec-scripts-preset-jquery",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "jQuery preset for ec-scripts.",
   "author": "eCentral GmbH <info@ecentral.de>",
   "contributors": [
