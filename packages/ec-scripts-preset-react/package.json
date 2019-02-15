@@ -35,6 +35,6 @@
     "react-test-renderer": "^16.0.0"
   },
   "peerDependencies": {
-    "ec-scripts": "1.x || 2.x"
+    "ec-scripts": "*"
   }
 }
