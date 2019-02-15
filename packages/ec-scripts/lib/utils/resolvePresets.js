@@ -5,7 +5,7 @@ const settings = require('../settings');
 /**
  * Resolves the configurations including presets and the base ec-scripts package.
  * @param [appPath=settings.appPath] An optional path to the project's ecconf.js (without filename).
- * @returns {Object} A lookup of loaded configurations.
+ * @returns {Object[]} The configuration objects of ec-scripts, presets and app.
  */
 const resolvePresets = (appPath = settings.appPath) => {
     const config = requireConfig(appPath);
